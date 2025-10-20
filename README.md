@@ -1,10 +1,13 @@
-# apstrahub-configpack-example
+You have reached a repo that is meant to be deployed from Apstra Hub. If you would still like to use this, the terraform/tofu config is in ./pack'
 
-This repository contains an ApstraHub ConfigPack.
+This Apstra Config Pack will deploy the Juniper-Validated-Design (JVD) for a 5 Stage Fabric as defined in https://www.juniper.net/documentation/us/en/software/jvd/jvd-dcfabric-5-stage/
 
-ConfigPack documentation intended for end users is required to appear [here, in the README.md file in the `pack` directory](./pack/README.md). Check that file for details about this ConfigPack.
+The input parameters allow you to choose your IP, ASN, and virtual_network VNI address ranges.
 
-This file is strictly boilerplate from the [config-pack-example repo](https://github.com/chrismarget-j/apstrahub),
-but a pack author/publisher may choose to modify it as they work through the
-[publisher documentation](https://github.com/chrismarget-j/apstrahub-configpack-example/blob/main/publisher_guide/README.md)
-to give additional context to readers browsing the ConfigPack on GitHub. 
+To complete the deployment once it is built, you will need to:
+
+1 - Assign your chosen systems (and onboard them from Apstra if not done already) to the blueprint.
+
+2 - Ensure your cabling map is accurate, either by performing the "Fetch LLDP discovered data" action, or by manually updating the link names.
+
+3 - Perform the Commit.
