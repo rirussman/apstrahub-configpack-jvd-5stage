@@ -1,8 +1,6 @@
 ---
 manifest_version: 1
-description: This is an example pack which includes a single configlet.
+description: This is a config pack to build the 5 Stage Data Center Fabric with Juniper Apstra Juniper Validated Design (JVD). 
 supported_apstra_versions:
-  - 5.0.0
-  - 5.0.1
   - 5.1.0
   - 6.0.0
