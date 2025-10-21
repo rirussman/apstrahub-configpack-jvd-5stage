@@ -133,10 +133,9 @@ resource "apstra_datacenter_routing_policy" "external_router_mx" {
   import_policy = "default_only" // "default_only" is the default. other options: "all" "extra_only"
   extra_exports = [
     { prefix = "0.0.0.0/0", ge_mask = 1,   le_mask = 32,   action = "permit"   },
-    { prefix = "::0/0", ge_mask = 1,    le_mask = 32,   action = "permit"   },
+    { prefix = "::/0", ge_mask = 1,    le_mask = 32,   action = "permit"   },
   ]
   export_policy = {
-    export_l3_edge_server_links   = true
     export_l2_edge_subnets        = true
     export_loopbacks              = true
     export_static_routes          = null
